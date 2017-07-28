@@ -337,153 +337,347 @@
 	</section>
 
 	<section class="slide" data-level="0">
-		<h1></h1>
+		<h1>Scan unit</h1>
+		<figure>
+			<img src="assets/k9.png" alt="schematic: MLA scan unit">
+			<figcaption></figcaption>
+		</figure>
+		<p>The scan unit moves the beam in a rester pattern over the specimen area, the signal detected from the sample is synchronised
+			with the unit producing the on screen image</p>
+		<p>Magnification is controlled by the size of area scanned by the unit, reducing the size of the scanned area results in an
+			increas in magnification</p>
+	</section>
 
+	<section class="slide" data-level="0">
+		<h1>Typical analytical traverse of frames analyzed by the MLA </h1>
+		<figure>
+			<img src="assets/Afbeelding10.png" alt="MLA analytical traverse for particle mounts">
+			<figcaption>For particle mounts, measurement starts in the center of the block and moves in a clockwise pattern</figcaption>
+		</figure>
+		<figure>
+			<img src="assets/Afbeelding11.png" alt="MLA analytical traverse for thin sections">
+			<figcaption>For thin sections, the measurement starts from the bottom left and moves across and up the slide in a zig-zag pattern.</figcaption>
+		</figure>
+	</section>
+
+	<section class="slide" data-level="0">
+		<h1>Lecture Outline</h1>
+		<ul>
+			<li>Overview of MLA and Automated Mineralogy</li>
+			<li>Sample Presentation</li>
+			<li>Some SEM Basics</li>
+			<li><strong>BSE and EDX Measurements by MLA </strong></li>
+			<li>Some Data Outputs </li>
+			<li>Example Sandstone</li>
+			<li>Future Outlook</li>
+		</ul>
+	</section>
+
+	<section class="slide" data-level="0">
+		<h1>Electron Beam – Sample Interaction</h1>
+		<p>Electrons react with the specimen to produce three basic types of signals: backscatter electrons (BSE), secondary electrons
+			(SE) and X-rays</p>
+		<p>BSE and SE detector units pick up these signals and convert them to an amplified electrical signal which is then synchronised
+			to the Scan Unit and displayed on the screen to produce an image</p>
+		<p>Energy-dispersive X-ray (EDX) detectors collect the spectrum of energies of X-ray photons released</p>
+		<figure>
+			<img src="assets/Afbeelding12.jpg" alt="interaction volume">
+			<figcaption></figcaption>
+		</figure>
 	</section>
 
 	<section class="slide" data-level="0">
 		<h1></h1>
+		<figure>
+			<img src="assets/Afbeelding13.png" alt="inside view of the MLA with thin section holder">
+			<figcaption></figcaption>
+		</figure>
+	</section>
 
+	<section class="slide" data-level="0">
+		<h1>XBSE Measurement Mode of MLA</h1>
+		<p>All mineral grain boundaries are discriminated simply by BSE imaging</p>
+		<p>Single X-ray analysis for each grain is used to verify mineral identification </p>
+		<p>Rapid measurement as it only requires a small number of X-ray analyses to define the grain components of the particle</p>
+		<p>MLA software compares the X-ray spectrum of the unknown to each reference standard in terms of peak position, peak shape
+			and intensity ratios using a chi-squared difference test on all channels in the spectrum to determine a match</p>
 	</section>
 
 	<section class="slide" data-level="0">
 		<h1></h1>
+		<figure>
+			<img src="assets/Afbeelding14.png" alt="XBSE Measurement Mode of MLA: example of results">
+			<figcaption></figcaption>
+		</figure>
+	</section>
 
+	<section class="slide" data-level="0">
+		<h1>XBSE Limitations</h1>
+		<p>BSE grey level overlapping</p>
+		<p>Poor grain boundary definition between some minerals with similar AAN:</p>
+		<ul>
+			<li>Albite/Quartz</li>
+			<li>Pyrite/Magnetite</li>
+			<li>Pentlandite/Chalcopyrite</li>
+		</ul>
+	</section>
+
+	<section class="slide" data-level="0">
+		<h1>Grain X-Ray Mapping (GXMAP) Mode of MLA</h1>
+		<p>BSE limitations can be overcome by X-ray mapping</p>
+		<p>Analyses particles by laying a closely spaced grid of X-ray points over whole particle</p>
+		<p>User defined step size (pixel spacing of x-rays)</p>
+		<p>Usually most appropriate mode for petrographic thin sections, where it is likely that the grain boundaries between two
+			or more important minerals cannot be distinguished by BSE alone</p>
 	</section>
 
 	<section class="slide" data-level="0">
 		<h1></h1>
+		<figure>
+			<img src="assets/Afbeelding15.png" alt="Grain X-Ray Mapping (GXMAP) Mode of MLA: example of results">
+			<figcaption></figcaption>
+		</figure>
+	</section>
 
+	<section class="slide" data-level="0">
+		<h1>Lecture Outline</h1>
+		<ul>
+			<li>Overview of MLA and Automated Mineralogy</li>
+			<li>Sample Presentation</li>
+			<li>Some SEM Basics</li>
+			<li>BSE and EDX Measurements by MLA </li>
+			<li><strong>Some Data Outputs</strong> </li>
+			<li>Example Sandstone</li>
+			<li>Future Outlook</li>
+		</ul>
+	</section>
+
+	<section class="slide" data-level="0">
+		<h1>Definition- Modal Mineralogy</h1>
+		<p>Modal analysis is the process by which volumes of the individual minerals are obtained - this can be doe by eithr point
+			anaysis (XMOD) or determining the phase area (XBSE, GXMAP)</p>
+		<p>The volume percent area (area %) can be converted to weaght percent by multiplying the density (that is the density added
+			in the mineral database and recalculating to 100%.</p>
+		<p>Hence, two phases can have the same area % distribution but if their densities are very different the wt % will differ
+			significantly
+		</p>
+		<figure>
+			<img src="assets/k10.png" alt="example: table with density, area % and weight %">
+			<figcaption></figcaption>
+		</figure>
+	</section>
+
+	<section class="slide" data-level="0">
+		<h1>Liberation: Particle composition vs Free surface</h1>
+		<p>For all of the particles shown below, the 'liberation by particle composition' of the green mineral is approx 50%. However,
+			the 'liberation by free surface' for the green mineral is 0% (not exposed) in particle 1, ~50% in particle 2 and 100%
+			in particle 3. </p>
+		<p>Liberation by particle composition is concerned only with the composition of the particle wheareas the other is concerned
+			with the surface exposure of the mineral of interest, which is imortant if you want to get a ssense for the flotability
+			or leachability of that mineral.</p>
+		<figure>
+			<img src="assets/k11.png" alt="liberation by composition an by free surface example">
+			<figcaption></figcaption>
+		</figure>
+	</section>
+
+	<section class="slide" data-level="0">
+		<h1>Shape Definitions</h1>
+		<figure>
+			<img src="assets/Afbeelding16.png" alt="shape definition part 1">
+			<figcaption></figcaption>
+		</figure>
+		<figure>
+			<img src="assets/Afbeelding17.png" alt="shape definition part 2">
+			<figcaption></figcaption>
+		</figure>
+	</section>
+
+	<section class="slide" data-level="0">
+		<h1>Lecture Outline</h1>
+		<ul>
+			<li>Overview of MLA and Automated Mineralogy</li>
+			<li>Sample Presentation</li>
+			<li>Some SEM Basics</li>
+			<li>BSE and EDX Measurements by MLA</li>
+			<li>Some Data Outputs</li>
+			<li><strong>Example Sandstone</strong></li>
+			<li>Future Outlook</li>
+		</ul>
 	</section>
 
 	<section class="slide" data-level="0">
 		<h1></h1>
-
+		<figure>
+			<img src="assets/Afbeelding18.png" alt="ppl: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption>Calcite-cemented sandstone from the Upper Mississippian (Visean) </figcaption>
+		</figure>
 	</section>
 
 	<section class="slide" data-level="0">
 		<h1></h1>
-
+		<figure>
+			<img src="assets/Afbeelding19.png" alt="xpl: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption>Calcite-cemented sandstone from the Upper Mississippian (Visean) </figcaption>
+		</figure>
 	</section>
 
 	<section class="slide" data-level="0">
 		<h1></h1>
-
+		<figure>
+			<img src="assets/Afbeelding20.png" alt="BSE: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption>Calcite-cemented sandstone from the Upper Mississippian (Visean) </figcaption>
+		</figure>
 	</section>
 
 	<section class="slide" data-level="0">
 		<h1></h1>
+		<figure>
+			<img src="assets/Afbeelding21.png" alt="GXMAP: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption>Calcite-cemented sandstone from the Upper Mississippian (Visean) </figcaption>
+		</figure>
+	</section>
 
+	<section class="slide" data-level="0">
+		<h1>Heavy Mineral Concentrate</h1>
+		<!-- #TODO update parser -->
+		<figure>
+			<img src="assets/Afbeelding22.png" alt="BSE: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<img src="assets/Afbeelding23.png" alt="XBSE: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<img src="assets/Afbeelding24.png" alt="XBSE legend: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption>Calcite-cemented sandstone from the Upper Mississippian (Visean) </figcaption>
+		</figure>
 	</section>
 
 	<section class="slide" data-level="0">
 		<h1></h1>
-
+		<p>Data may be used to calculate mineral indices (e.g., chromite/zircon and garnet/zircon) used for evaluations of provenance
+			or diagenesis.</p>
+		<figure>
+			<img src="assets/Afbeelding25.png" alt="thin section wt% modal: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption></figcaption>
+		</figure>
+		<figure>
+			<img src="assets/Afbeelding26.png" alt="crushed sample wt% modal: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption></figcaption>
+		</figure>
+		<figure>
+			<img src="assets/Afbeelding27.png" alt="heavy mineral conc. wt% modal: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption></figcaption>
+		</figure>
 	</section>
 
 	<section class="slide" data-level="0">
 		<h1></h1>
+		<figure>
+			<img src="assets/Afbeelding28.png" alt="thin section grain count proportion: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption></figcaption>
+		</figure>
+		<figure>
+			<img src="assets/Afbeelding29.png" alt="crushed sample grain count proportion: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption></figcaption>
+		</figure>
+		<figure>
+			<img src="assets/Afbeelding30.png" alt="heavy mineral conc. grain count proportion: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption></figcaption>
+		</figure>
+	</section>
+
+	<section class="slide" data-level="0">
+		<h1>Size and Shape Data of Grains May be Linked to Age Measurements by LA-ICPMS</h1>
+		<figure>
+			<img src="assets/Afbeelding31.png" alt="zircon grain area by U-Pb age: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption></figcaption>
+		</figure>
+		<figure>
+			<img src="assets/Afbeelding32.png" alt="zircon grain aspect ratio by U-Pb age: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption></figcaption>
+		</figure>
+		<p>Links to zircon, feldspar and apatite isotopic analyses</p>
+	</section>
+
+	<section class="slide" data-level="0">
+		<h1>Investigate Zircon Grains of Unusual Size and Shape – Possible Fragmentation by Crushing?</h1>
+		<figure>
+			<img src="assets/Afbeelding33.png" alt="number of zircon grain by area: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption></figcaption>
+		</figure>
+		<figure>
+			<img src="assets/Afbeelding34.png" alt="angularity of zircon grain by area: Calcite-cemented sandstone from the Upper Mississippian (Visean)">
+			<figcaption></figcaption>
+		</figure>
+	</section>
+
+	<section class="slide" data-level="0">
+		<h1>Electric Pulse Disaggregation (EPD)</h1>
+		<p>Compressive force of mechanical crushing replaced by tension due to rending effect of an explosion</p>
+		<p>At >50kV, rock breaks down by rapid discharge of electric pulses creating a high density plasma and a series of explosions
+			in the sample</p>
+		<figure>
+			<img src="assets/Afbeelding35.jpg" alt="EPD setup">
+			<figcaption></figcaption>
+		</figure>
+	</section>
+
+	<section class="slide" data-level="0">
+		<h1>Sample Processing</h1>
+		<p>Sample (~ 1 kg) placed in a water bath on the sieve</p>
+		<p>Energy transmitted internally and preferentially along zones of weakness, such as grain boundaries</p>
+		<p>Individual, undamaged mineral grains pass through the sieve out of the explosion area with virtually intact primary textural
+			attributes
+		</p>
+		<figure>
+			<img src="assets/Afbeelding36.png" alt="CNT Spark-2, Ottawa, Louis Cabri">
+			<figcaption>CNT Spark-2, Ottawa, Louis Cabri</figcaption>
+		</figure>
+	</section>
+
+	<section class="slide" data-level="0">
+		<h1>Granit -> Zircons using EPD</h1>
+		<figure>
+			<img src="assets/k12.png" alt="">
+			<figcaption></figcaption>
+		</figure>
+		<figure>
+			<img src="assets/k13.png" alt="">
+			<figcaption>Zircon concentrate after another 5 min on 1mm sieve</figcaption>
+		</figure>
+	</section>
+
+	<section class="slide" data-level="0">
+		<h1>Lecture Outline</h1>
+		<ul>
+			<li>Overview of MLA and Automated Mineralogy</li>
+			<li>Sample Presentation</li>
+			<li>Some SEM Basics</li>
+			<li>BSE and EDX Measurements by MLA</li>
+			<li>Some Data Outputs</li>
+			<li>Example Sandstone</li>
+			<li><strong>Future Outlook</strong></li>
+		</ul>
+	</section>
+
+	<section class="slide" data-level="0">
+		<h1>Future Outlook</h1>
+		<p>Application of the MLA to sedimentary geology is in its infancy but holds considerable promise for </p>
+		<ul>
+			<li>depositional and diagenetic textures and mineralogy</li>
+			<li>porosity and permeability</li>
+			<li>sand provenance</li>
+			<li>stratigraphic correlation</li>
+			<li>lithotyping of well cuttings</li>
+			<li>till and sediment prospecting</li>
+			<li>sedimentary ore petrology</li>
+		</ul>
 
 	</section>
 
 	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
-	</section>
-
-	<section class="slide" data-level="0">
-		<h1></h1>
-
+		<h1>Future Outlook</h1>
+		<p>MLA methods need to be tested and verified more extensively with well-characterized reference materials to better define
+			limits on accuracy and precision of measurements</p>
+		<p>Procedures for data handling and reporting should become more normalized so that results from different laboratories can
+			be compared more directly</p>
 	</section>
 
 
